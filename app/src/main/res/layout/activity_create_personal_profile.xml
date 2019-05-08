@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CreatePersonalProfile">
+
+    <TextView
+        android:id="@+id/textView_age2"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView_profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/textView_age" />
+
+    <ImageView
+        android:id="@+id/imageView_profilePicture"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_welcom"
+        tools:src="@tools:sample/avatars[2]" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="205dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_profilePicture" />
+
+    <TextView
+        android:id="@+id/textView_welcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Finish setting up your profile"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView_profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/textView_welcom" />
+
+    <TextView
+        android:id="@+id/textView_age"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView_profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1097976190813",
+    "firebase_url": "https://homeglucose.firebaseio.com",
+    "project_id": "homeglucose",
+    "storage_bucket": "homeglucose.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097976190813:android:cde27f3e16b4688b",
+        "android_client_info": {
+          "package_name": "com.example.homeglucose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097976190813-20gcv3cc5rf2fndnvrm849hufosum5ap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.homeglucose",
+            "certificate_hash": "d8d8859fb459a063c4738b151f9bc46d4e1423bb"
+          }
+        },
+        {
+          "client_id": "1097976190813-f3qmiba7a4bdur5bevbolr8f234le16q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA7Nlf6meiGNY5zs_BAEHXR83yt23KeZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097976190813-f3qmiba7a4bdur5bevbolr8f234le16q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

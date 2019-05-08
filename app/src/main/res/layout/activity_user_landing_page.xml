@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".UserLandingPage">
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/test_banner_ad_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+    <ImageView
+        android:id="@+id/imageView_3"
+        android:layout_width="0dp"
+        android:layout_height="196dp"
+        android:background="@drawable/background"
+        android:scaleType="centerInside"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="1.0"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        ads:layout_constraintEnd_toStartOf="@+id/imageView_3"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toEndOf="@+id/imageView_3"
+        ads:layout_constraintTop_toBottomOf="@+id/imageView_profilePic" />
+
+    <ImageView
+        android:id="@+id/imageView_profilePic"
+        android:layout_width="131dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintEnd_toStartOf="@+id/imageView_3"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toEndOf="@+id/imageView_3"
+        ads:layout_constraintTop_toTopOf="@+id/imageView_3"
+        ads:srcCompat="@drawable/profile_blank_picture" />
+
+    <TextView
+        android:id="@+id/textView_notVerified"
+        android:layout_width="395dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:gravity="center|center_horizontal"
+        android:text="Account not verified. Click here to resend verification email."
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        android:visibility="gone"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/imageView_3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_uploading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        ads:layout_constraintBottom_toTopOf="@+id/imageView_profilePic"
+        ads:layout_constraintEnd_toStartOf="@+id/imageView_profilePic"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toEndOf="@+id/imageView_profilePic"
+        ads:layout_constraintTop_toBottomOf="@+id/imageView_profilePic" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        ads:layout_constraintBottom_toTopOf="@+id/adView"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/imageView_3" />
+
+    <TextView
+        android:id="@+id/textView_loading"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="You ever see the back of a twenty dollar bil?"
+        android:textColor="@color/Hint"
+        android:visibility="gone"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:constraint_referenced_ids="progressBar,textView_loading" />
+
+    <TextView
+        android:id="@+id/textView_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        ads:layout_constraintTop_toBottomOf="@+id/textView_notVerified"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <TextView
+        android:id="@+id/textView_latLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        ads:layout_constraintTop_toBottomOf="@+id/textView_zip"
+        tools:layout_editor_absoluteX="176dp" />
+
+</android.support.constraint.ConstraintLayout>
